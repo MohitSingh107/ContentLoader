@@ -1,0 +1,12 @@
+<div class="container mt-5 text-center">
+    <h1>Dynamic Component Loader</h1>
+    <div class="btn-group my-3">
+      <button class="btn btn-primary" (click)="CopyCodeComponent()">Copy Code</button>
+      <button class="btn btn-success" (click)="SearchWordComponent()">Search Word</button>
+    </div>
+    
+    <div class="dynamic-area p-4 border rounded">
+      <ng-container *ngComponentOutlet="dynamicComponent"></ng-container>
+      <ng-container #dynamicContainer></ng-container>
+    </div>
+  </div>
